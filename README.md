@@ -1,0 +1,1 @@
+Esse jogo foi feito para aumentar meus conhecimentos, e fazer uma sátira a minha primeira graduação (licenciatura em física), sendo que quando o player morre para um obstaculo (instituto federal) ele é convocado a cursar esta graduação
