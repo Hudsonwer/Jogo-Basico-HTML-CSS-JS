@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    position: absolute;
+    font-size: 40px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #c5e9ab 0%, #f1cccc 100%);
+    color: black;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+a#reiniciar{
+    bottom: 0;
+    left: 0;
+}
+a#voltar{
+    bottom: 0;
+    right: 0;
+}
+a:hover{
+    transform: translateY(-3px);
+}
+
+.game-board {
+    width: 100%;
+    height: 50%;
+    border-bottom: 10px solid rgba(33, 82, 50);
+    background-image: linear-gradient(rgb(158, 198, 224),rgb(255, 255, 255));
+    position: absolute;
+    overflow: hidden;
+}
+
+.espinho {
+    position: absolute;
+    bottom: 0;
+    animation: espinho-animacao 2s infinite linear;
+}
+
+.player{
+    position: absolute;
+    bottom: 0;
+}
+
+.pular{
+    animation: player-animacao 990ms ease-out;
+}
+
+@keyframes espinho-animacao {
+from {
+    right: -150px;
+}
+
+to {
+    right: 110%;
+}
+
+}
+
+@keyframes player-animacao {
+    0% {
+        bottom: 0;
+    }
+    
+    40% {
+        bottom: 160px;
+    }
+    50% {
+        bottom: 160px;
+    }
+    60% {
+        bottom: 150px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+    
+    }
